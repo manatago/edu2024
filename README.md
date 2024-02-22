@@ -22,3 +22,7 @@ Visual Studio Codeをインストールし、
 拡張機能のLive Serverをインストール。
 
 その後、Visual Studio Codeでindex.htmlを開き、画面右下の[Go Live]をクリックすると動くはず。
+
+参考URL
+
+https://www.freecodecamp.org/japanese/news/vscode-live-server-auto-refresh-browser/
