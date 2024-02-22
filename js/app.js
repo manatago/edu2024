@@ -1,6 +1,20 @@
 let questions = [];
 
 
+const arrayShuffle = (array) => {
+    for(let i = (array.length - 1); 0 < i; i--){
+  
+      // 0〜(i+1)の範囲で値を取得
+      let r = Math.floor(Math.random() * (i + 1));
+  
+      // 要素の並び替えを実行
+      let tmp = array[i];
+      array[i] = array[r];
+      array[r] = tmp;
+    }
+    return array;
+  }
+
 const setQuestions = (res) =>{
     let rows = res.split('\n');
     rows = rows.map(row  => row.split(','));
@@ -8,7 +22,7 @@ const setQuestions = (res) =>{
         return {
             question: row[0],
             answer: row[1],
-            options: row.slice(1),
+            options: arrayShuffle(row.slice(1)),
             selected: key === 0 ? true : false,
             user_answer: null,
         }
