@@ -14,3 +14,11 @@ CSVの中身は下記の通りである。
 
 ## index.csvの作成
 サンプルの通り、ファイル名、表示名の２列を記載すること
+
+
+# 実行環境
+webサーバー環境が必要だが、Visual Studio Codeで擬似的に実行できる。
+Visual Studio Codeをインストールし、
+拡張機能のLive Serverをインストール。
+
+その後、Visual Studio Codeでindex.htmlを開き、画面右下の[Go Live]をクリックすると動くはず。
